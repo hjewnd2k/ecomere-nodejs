@@ -10,6 +10,7 @@ app.use(helmet()); // sets various HTTP headers to help protect your app from co
 app.use(compression()); // gzip compression middleware
 
 // init db
+require("./dbs/init.mongodb");
 
 // init routes
 
